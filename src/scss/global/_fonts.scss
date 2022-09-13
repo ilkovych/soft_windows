@@ -1,0 +1,22 @@
+@include font-face("TTNorms", "TTNorms-Black", 900, );
+@include font-face("TTNorms", "TTNorms-BlackItalic", 900, "italic");
+@include font-face("TTNorms", "TTNorms-ExtraBold", 800, );
+@include font-face("TTNorms", "TTNorms-ExtraBoldItalic", 800, "italic");
+@include font-face("TTNorms", "TTNorms-Bold", 700, );
+@include font-face("TTNorms", "TTNorms-BoldItalic", 700, "italic");
+@include font-face("TTNorms", "TTNorms-Heavy", 600, );
+@include font-face("TTNorms", "TTNorms-HeavyItalic", 600, "italic");
+@include font-face("TTNorms", "TTNorms-Medium", 500, );
+@include font-face("TTNorms", "TTNorms-MediumItalic", 500, "italic");
+@include font-face("TTNorms", "TTNorms-Regular", 400, );
+@include font-face("TTNorms", "TTNorms-Italic", 400, "italic");
+@include font-face("TTNorms", "TTNorms-Light", 300, );
+@include font-face("TTNorms", "TTNorms-LightItalic", 300, "italic");
+@include font-face("TTNorms", "TTNorms-ExtraLight", 200, );
+@include font-face("TTNorms", "TTNorms-ExtraLightItalic", 200, "italic");
+@include font-face("TTNorms", "TTNorms-Thin", 100, );
+@include font-face("TTNorms", "TTNorms-ThinItalic", 100, "italic");
+
+:root {
+  --base-font: "TTNorms";
+}

@@ -1,0 +1,63 @@
+/* STYLE: colors */
+:root {
+  --color__black: #000000;
+  --color__blue-1: #536990;
+  --color__blue-2: #00a2f2;
+  --color__blue-3: #13a6e6;
+  --color__dark-1: #282828;
+  --color__dark-2: #282728;
+  --color__dark-3: #212021;
+  --color__dark-4: #1f1f1f;
+  --color__green-1: #13b94a;
+  --color__green-2: #00ad5d;
+  --color__green-3: #8cc53f;
+  --color__green-4: #25d231;
+  --color__green-5: #81cf1d;
+  --color__green-6: #2bb446;
+  --color__green-7: #40d162;
+  --color__green-8: #25d266;
+  --color__green-9: #43c957;
+  --color__grey-1: #f3f3f3;
+  --color__grey-2: #efeded;
+  --color__grey-3: #e3d6cb;
+  --color__grey-4: #f4f4f4;
+  --color__grey-5: #eeeeee;
+  --color__grey-6: #e9e7e7;
+  --color__grey-7: #b0afaf;
+  --color__grey-8: #f2f2f2;
+  --color__grey-9: #efefef;
+  --color__grey-10: #777777;
+  --color__grey-11: #fdfdfd;
+  --color__orange-1: #ce9127;
+  --color__orange-2: #fbaa2a;
+  --color__orange-3: #d09732;
+  --color__orange-4: #cf9124;
+  --color__orange-5: #d09530;
+  --color__orange-6: #cc8f25;
+  --color__orange-7: #feb430;
+  --color__orange-8: #d89b30;
+  --color__orange-9: #feb431;
+  --color__orange-10: #ffc959;
+  --color__orange-11: #e89d24;
+  --color__violet: #7460f3;
+  --color__white: #ffffff;
+}
+
+/* !STYLE: colors */
+
+/* STYLE: gradients */
+:root {
+  --grad__orange: background-image: linear-gradient(to top, #fe990a 0%, #ffd26a 98%, #ffd26a 100%);
+}
+
+/* !STYLE: gradients */
+
+/* STYLE: shadows */
+:root {
+  --shadow-1: 0 0.25rem 0 #c8c8c8;
+  --shadow-2: -1rem 2rem 4.25rem rgba(51, 58, 69, 0.1);
+  --shadow-orange-1: 0 0.25rem 0 #d7911c,
+    inset 0 0 2.25rem rgba(255, 206, 100, 0.2);
+}
+
+/* !STYLE: shadows */
