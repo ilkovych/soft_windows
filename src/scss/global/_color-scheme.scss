@@ -47,17 +47,20 @@
 
 /* STYLE: gradients */
 :root {
-  --grad__orange: background-image: linear-gradient(to top, #fe990a 0%, #ffd26a 98%, #ffd26a 100%);
+  --grad__orange: linear-gradient(to top, #fe990a 0%, #ffd26a 98%, #ffd26a 100%);
 }
 
 /* !STYLE: gradients */
 
 /* STYLE: shadows */
 :root {
-  --shadow-1: 0 0.25rem 0 #c8c8c8;
-  --shadow-2: -1rem 2rem 4.25rem rgba(51, 58, 69, 0.1);
-  --shadow-orange-1: 0 0.25rem 0 #d7911c,
-    inset 0 0 2.25rem rgba(255, 206, 100, 0.2);
+  --shadow-1: 0 0.25em 0 #c8c8c8;
+  --shadow-2: -1em 2em 4.25em rgba(51, 58, 69, 0.1);
+
+  --shadow-text-1: 0 0 1.25em rgba(40, 39, 40, 0.36);
+
+  --shadow-orange-1: 0 0.25em 0 #d7911c,
+  inset 0 0 2.25em rgba(255, 206, 100, 0.2);
 }
 
 /* !STYLE: shadows */
