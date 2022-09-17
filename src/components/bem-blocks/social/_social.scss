@@ -1,0 +1,34 @@
+.social {
+  &__link {
+    height: 3rem;
+    width: 3rem;
+    padding: 1rem;
+    border-radius: 50%;
+    border: none;
+    color: var(--color__white);
+    line-height: 1;
+    @include btn_anim(1.1, 0.9);
+
+    &.--viber {
+      background-color: var(--color__violet);
+    }
+
+    &.--telegram {
+      background-color: var(--color__blue-2);
+    }
+
+    &.--whatsapp {
+      background-color: var(--color__green-4);
+    }
+
+    &+& {
+      margin-left: 0.5rem;
+    }
+  }
+
+  &__link-icon {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+}

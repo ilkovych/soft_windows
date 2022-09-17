@@ -1,0 +1,61 @@
+<div class="header__topbar topbar">
+  <div class="container --full">
+    <div class="topbar__inner flex --align-center --just-space">
+      <a href="#top"
+         class="topbar__logo logo">
+        @@include('../../../svg/include/logo_text_horisontal.svg',{"svgClass":"logo__pic"})
+      </a>
+      <p class="topbar__text">
+        Виробник м’яких вікон з прозорої плівки ПВХ
+      </p>
+
+      <div class="topbar__rate flex --just-space">
+        <div class="topbar__rate-ribbon">4,9</div>
+        <div class="topbar__rate-inner">
+          <div class="topbar__rate-stars flex">
+            @@include("../../../svg/include/rate-star.svg",{"class":"topbar__rate-star"})
+            @@include("../../../svg/include/rate-star.svg",{"class":"topbar__rate-star"})
+            @@include("../../../svg/include/rate-star.svg",{"class":"topbar__rate-star"})
+            @@include("../../../svg/include/rate-star.svg",{"class":"topbar__rate-star"})
+            @@include("../../../svg/include/rate-star.svg",{"class":"topbar__rate-star"})
+          </div>
+          <p class="topbar__rate-text">
+            <span class="topbar__rate-text-accent">Рейтинг в Google</span> заснований на більш ніж 20 відгуках
+          </p>
+        </div>
+      </div>
+
+      <a href="#"
+         class="topbar__link flex --just-space --align-center">
+        <figure class="topbar__link-pic">
+          @@include("../../../svg/include/blueprint.svg",{"class":"topbar__link-icon"})
+        </figure>
+        <span class="topbar__link-text">Відправити фото
+          конструкції та ескіз</span>
+      </a>
+      <a href="#"
+         class="topbar__link flex --just-space --align-center">
+        <figure class="topbar__link-pic">
+          @@include("../../../svg/include/calc.svg",{"class":"topbar__link-icon"})
+        </figure>
+        <span class="topbar__link-text">Калькулятор вартості
+          м’яких вікон</span>
+      </a>
+
+      <div class="topbar__social">
+        <span class="topbar__block-title">Задати питання онлайн</span>
+        @@include("../social/_social.html",{"class":"topbar__social"})
+      </div>
+
+      <div class="topbar__block">
+        <span class="topbar__block-title">ПН - СБ 9:00-18:00 / ВС- Вихідний</span>
+        <a href="tel:+380555555566"
+           class="topbar__phone">+38 (055)-55-55-566</a>
+        <button class="topbar__callback">Зателефонувати мені за 30 сек</button>
+      </div>
+    </div>
+    <nav class="topbar__navigation">
+      @@include("../menu/_menu.html",{"class":"topbar__menu"})
+    </nav>
+  </div>
+</div>

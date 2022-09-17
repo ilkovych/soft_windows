@@ -1,0 +1,14 @@
+.input {
+  appearance: none;
+  border: none;
+  border-radius: 4em;
+  padding: 2em 3em;
+  background-color: var(--color__grey-4);
+  font-size: 1rem;
+  color: var(--color__dark-2);
+  line-height: 1.25;
+
+  &::placeholder {
+    color: var(--color__grey-10);
+  }
+}
