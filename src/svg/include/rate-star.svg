@@ -1,0 +1,14 @@
+<svg id="SVGDoc" width="12" height="12"
+  xmlns="http://www.w3.org/2000/svg" version="1.1"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:avocode="https://avocode.com/" viewBox="0 0 12 12" class="@@class">
+  <defs></defs>
+  <desc>Generated with Avocode.</desc>
+  <g>
+    <g>
+      <title>5-конечная звезда 1</title>
+      <path d="M6.21214,0.6905v0l1.73836,3.31477v0l3.53577,0.71339v0l-2.46128,2.76288v0l0.44666,3.76042v0l-3.25951,-1.60902v0l-3.25951,1.60902v0l0.44666,-3.76042v0l-2.46117,-2.76288v0l3.53565,-0.71339v0l1.73836,-3.31477v0" fill="#8cc53f" fill-opacity="1"></path>
+      <path d="M6.21214,0.6905v0l1.73836,3.31477v0l3.53577,0.71339v0l-2.46128,2.76288v0l0.44666,3.76042v0l-3.25951,-1.60902v0l-3.25951,1.60902v0l0.44666,-3.76042v0l-2.46117,-2.76288v0l3.53565,-0.71339v0l1.73836,-3.31477v0" fill="#d09732" fill-opacity="1"></path>
+    </g>
+  </g>
+</svg>

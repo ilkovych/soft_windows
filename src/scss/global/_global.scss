@@ -60,10 +60,29 @@ picture {
   }
 }
 button,a,input{
+  transition: all 0.25s;
   &:focus{
     outline: transparent;
   }
 }
 a{
   text-decoration: none;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+
+  &.--full {
+    padding: 0 6.25rem;
+  }
+
+  &.--m {
+    padding: 0 4.75rem;
+  }
+
+  &.--fm {
+    padding: 0 11rem;
+  }
 }

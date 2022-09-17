@@ -1,4 +1,4 @@
-const plugins = [];
+const plugins = ["node_modules/parallax-js/dist/parallax.js"];
 const {
 	src,
 	dest

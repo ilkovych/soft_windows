@@ -1,0 +1,21 @@
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    &+& {
+      margin-left: 1em;
+    }
+  }
+
+  &__link {
+    text-transform: uppercase;
+    color: var(--color__white);
+    transition: all 0.25s;
+
+    &:hover {
+      color: var(--color__orange-10);
+    }
+  }
+}

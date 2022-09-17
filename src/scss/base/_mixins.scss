@@ -58,3 +58,14 @@
 	padding: 0 #{$padding};
 	margin: 0 auto;
 }
+@mixin cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@mixin contain {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
