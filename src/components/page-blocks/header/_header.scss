@@ -1,8 +1,8 @@
 .header {
   color: var(--color__white);
   min-height: 100vh;
-  background-image: -webkit-image-set(url(../../../img/header/header-bg.jpg) 1x);
-  background-image: url(../../../img/header/header-bg.webp);
+  background-image: -webkit-image-set(url(../img/header/header-bg.jpg) 1x);
+  background-image: url(../img/header/header-bg.webp);
   @include cover;
   background-attachment: fixed;
   position: relative;
@@ -117,8 +117,8 @@
   //   width: 100%;
   //   height: 13.75rem;
   //   @include cover;
-  //   background-image: -webkit-image-set(url(../../../img/header/header-bg-animate.png) 1x);
-  //   background-image: url(../../../img/header/header-bg-animate.webp);
+  //   background-image: -webkit-image-set(url(../img/header/header-bg-animate.png) 1x);
+  //   background-image: url(../img/header/header-bg-animate.webp);
   //   position: absolute;
   //   bottom: 0;
   // }

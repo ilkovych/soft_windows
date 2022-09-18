@@ -1,0 +1,110 @@
+.quiz {
+  margin-top: 6.75rem;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(239, 239, 240, 1) 100%);
+  padding-bottom: 3.25rem;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 33.5rem;
+    width: 21.75rem;
+    bottom: -30%;
+    left: 0;
+    background-image: -webkit-image-set(url(../img/green.png) 1x);
+    background-image: url(../img/green.webp);
+    @include cover;
+  }
+
+  &__header {
+    margin: 0 auto;
+    max-width: 75rem;
+    text-align: center;
+  }
+
+  &__header-title {
+    font-size: 3.75rem;
+  }
+
+  &__header-text {
+    margin: 2.75rem auto 0;
+    font-size: 2rem;
+    max-width: 70rem;
+  }
+
+  &__inner {
+    box-shadow: -1rem 2rem 4.25rem rgba(51, 58, 69, 0.1);
+    background-color: var(--color__white);
+    background-image: -webkit-image-set(url(../img/quiz/quiz-inner-bg.png) 1x);
+    background-image: url(../img/quiz/quiz-inner-bg.webp);
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding: 5.5rem 7.5rem 0;
+    margin-top: 4.5rem;
+    border-radius: 2.5rem;
+    position: relative;
+    z-index: 1;
+    min-height: 62rem;
+  }
+
+  &__slider {
+    flex: 0 0 58rem;
+  }
+
+  &__content {
+    flex: 0 1 auto;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 126px;
+      width: 120%;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  &__content-title {
+    text-align: center;
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  &__content-item {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+
+    &+& {
+      margin-top: 1rem;
+    }
+  }
+
+  &__content-text {
+    margin: 0 0.5rem;
+  }
+
+  &__content-accent {}
+
+  &__content-pic {
+    margin: 0 0.5rem;
+  }
+
+  &__content-img {}
+
+  &__employer {}
+
+  &__employer-text {}
+
+  &__employer-name {}
+
+  &__employer-pic {}
+
+  &__employer-img {}
+}
