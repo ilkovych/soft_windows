@@ -1,0 +1,68 @@
+.advantages {
+  margin-top: 3.25rem;
+
+  &__inner {}
+
+  &__item {
+    flex: 0 1 31.25rem;
+    background-color: var(--color__grey-4);
+    border-radius: 1.25rem;
+    padding: 3.75rem;
+    font-size: 1.25rem;
+    line-height: 1.25;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.25s, flex-basis 0.25s;
+    will-change: transform;
+
+    &:nth-child(2) {
+      background-color: var(--color__orange-2);
+      color: var(--color__white);
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &+& {
+      margin-left: 1rem;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      z-index: 1;
+      height: 50%;
+      width: 50%;
+      bottom: 0;
+      right: 0;
+      background-image: -webkit-image-set(url(../../../img/advantages/advantages_grass.png) 1x);
+      background-image: url(../../../img/advantages/advantages_grass.webp);
+      @include contain;
+      background-position: right bottom;
+    }
+  }
+
+  &__item-text {
+    max-width: 17rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__item-pic {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 70%;
+    transition: transform 0.25s;
+    transform-origin: right bottom;
+    z-index: 0;
+  }
+
+  &__item:hover &__item-pic {
+    transform: scale(0.95);
+  }
+
+  &__item-text-accent {}
+}

@@ -1,0 +1,24 @@
+.arrow-up {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  display: block;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-image: var(--grad__orange);
+  padding: 1rem;
+  color: var(--color__white);
+
+  &__icon {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  &:hover {
+    transform: scale(1.25);
+  }
+}
