@@ -1,0 +1,135 @@
+.bullets {
+  background-image: -webkit-image-set(url(../img/bullets/bullets-bg.png) 1x);
+  background-image: url(../img/bullets/bullets-bg.webp);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-color: var(--color__grey-9);
+  height: 65vw;
+  padding-top: 4rem;
+  position: relative;
+  z-index: 0;
+
+  &__title {
+    font-size: 3.75rem;
+    font-weight: 400;
+    text-align: center;
+    max-width: 65rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+  }
+
+  &__item {
+    @include no-btn;
+    display: block;
+    padding: 0.5em;
+    font-size: 2rem;
+    color: var(--color__white);
+    font-weight: 700;
+    position: absolute;
+    z-index: 1;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    &::before {
+      height: 2.5em;
+      width: 2.5em;
+      background-color: #fff;
+    }
+
+    &::after {
+      height: 3em;
+      width: 3em;
+      background-color: rgba(255, 255, 255, 0.35);
+    }
+
+    &:nth-of-type(1) {
+      left: 6%;
+      top: 65%;
+    }
+
+    &:nth-of-type(2) {
+      left: 15%;
+      top: 45%;
+    }
+
+    &:nth-of-type(3) {
+      left: 20%;
+      top: 83%;
+    }
+
+    &:nth-of-type(4) {
+      left: 48.5%;
+      top: 32%;
+    }
+
+    &:nth-of-type(5) {
+      left: 48.5%;
+      top: 75%;
+    }
+
+    &:nth-of-type(6) {
+      left: 62%;
+      top: 60%;
+    }
+
+    &:nth-of-type(7) {
+      left: 80%;
+      top: 28%;
+    }
+  }
+
+  &__item-plus {
+    background-image: var(--grad__orange);
+    line-height: 1;
+    height: 2em;
+    width: 2em;
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item-text {
+    position: absolute;
+    opacity: 0;
+    color: var(--color__dark-1);
+    background-color: var(--color__white);
+    padding: 1rem 1rem 1rem 2.75rem;
+    font-size: 0.75rem;
+    text-align: left;
+    font-weight: 400;
+    width: 17rem;
+    display: block;
+    left: 3.25rem;
+    top: 50%;
+    transform: translateY(-50%) scaleX(0);
+    transform-origin: left center;
+    border-radius: 0 0.5rem 0.5rem 0;
+    box-shadow: var(--shadow-2);
+    pointer-events: none;
+    transition: opacity 0.25s, transform 0.25s;
+    z-index: 1;
+    height: 5rem;
+  }
+
+  &__item:hover &__item-text,
+  &__item:focus &__item-text {
+    transform: translateY(-50%) scaleX(1);
+    opacity: 1;
+    pointer-events: all;
+  }
+}
