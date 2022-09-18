@@ -42,7 +42,7 @@
     background-position: right center;
     background-repeat: no-repeat;
     overflow: hidden;
-    padding: 5.5rem 7.5rem 0;
+    padding: 5.5rem 1.75rem 0 7.5rem;
     margin-top: 4.5rem;
     border-radius: 2.5rem;
     position: relative;
@@ -57,6 +57,7 @@
   &__content {
     flex: 0 1 auto;
     position: relative;
+    margin-left: 3.5rem;
 
     &::before {
       content: '';
@@ -64,7 +65,11 @@
       height: 126px;
       width: 120%;
       bottom: 0;
-      right: 0;
+      right: -1.75rem;
+      background-image: -webkit-image-set(url(../../../img/quiz/quiz-grass.png) 1x);
+      background-image: url(../../../img/quiz/quiz-grass.webp);
+      @include cover;
+      z-index: 1;
     }
   }
 
@@ -80,6 +85,9 @@
     display: flex;
     align-items: center;
     margin-top: 1.5rem;
+    max-width: 21.25rem;
+    margin-left: auto;
+    margin-right: auto;
 
     &+& {
       margin-top: 1rem;
@@ -98,13 +106,33 @@
 
   &__content-img {}
 
-  &__employer {}
+  &__employer {
+    position: relative;
+    margin-top: 1.75rem;
+  }
 
-  &__employer-text {}
+  &__employer-text {
+    position: absolute;
+    left: 0;
+    top: 8rem;
+    text-align: right;
+    max-width: 10rem;
+  }
 
-  &__employer-name {}
+  &__employer-name {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
 
-  &__employer-pic {}
+  &__employer-pic {
+    height: 35rem;
+    width: 35rem;
+    margin-left: auto;
+  }
 
-  &__employer-img {}
+  &__employer-img {
+    object-position: right bottom;
+  }
 }
