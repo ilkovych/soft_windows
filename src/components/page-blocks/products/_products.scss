@@ -1,0 +1,30 @@
+.products {
+  padding: 5.5rem 0;
+  background-image: -webkit-image-set(url(../img/products/products-bg.webp) 1x);
+  background-image: url(../img/products/products-bg.webp);
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 24rem;
+    width: 11rem;
+    bottom: -10%;
+    right: 0;
+    background-image: url(../../../img/green.webp);
+    background-size: cover;
+    background-position: right top;
+    transform: scale(-1, 1);
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5rem;
+    grid-row-gap: 5rem;
+  }
+}

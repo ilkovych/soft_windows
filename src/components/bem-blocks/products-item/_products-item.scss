@@ -1,0 +1,35 @@
+.product {
+  color: var(--color__dark-2);
+
+  &__pic {
+    height: 12.5rem;
+    width: 12.5rem;
+    flex: 0 0 12.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+
+  &__content {
+    margin-left: 3rem;
+  }
+
+  &__number {
+    font-size: 1.5rem;
+    opacity: 0.25;
+  }
+
+  &__name {
+    margin-top: 0.5rem;
+    font-size: 2.25rem;
+    font-weight: 700;
+  }
+
+  &__text {
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+  }
+}
