@@ -1,0 +1,35 @@
+.footer {
+  padding: 1.25rem 0 2rem;
+  background-color: var(--color__dark-3);
+  color: var(--color__white);
+  font-size: 0.75rem;
+  font-weight: 500;
+
+  &__inner {}
+
+  &__logo {
+    color: var(--color__white);
+    width: 19.5rem;
+    height: 3.5rem;
+  }
+
+  &__text {
+    max-width: 10rem;
+    margin-left: 2.5rem;
+    margin-top: 1.5rem;
+  }
+
+  &__copy {
+    margin-left: auto;
+    text-align: center;
+    max-width: 8.5rem;
+    margin-top: 1.5rem;
+  }
+
+  &__link {
+    margin-left: auto;
+    color: var(--color__orange-8);
+    text-decoration: underline;
+    margin-top: 1.5rem;
+  }
+}
