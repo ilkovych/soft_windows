@@ -6,7 +6,18 @@
       <p class="quiz__header-text"><strong class="quis__header-accent">Отримайте за 1 хвилину розрахунок вартості м’яких вікон для вашого об’єкту</strong> в 2-х варіантах з урахуванням доставки і монтажу</p>
     </div>
     <div class="quiz__inner flex --just-space --align-str">
-      <div class="quiz__slider"></div>
+      <div class="quiz__slider">
+        <div class="quiz__slider-progress flex --align-center --just-center">
+          <div class="quiz__slider-progress-body --svg__progress"
+               data-progress="6"></div>
+          <span class="quiz__progress-descr"><strong>Питання&nbsp;<span class="quiz__progress-counter">1</span></strong>&nbsp;із 7</span>
+        </div>
+      
+        <div class="quiz__slider-items-wrapper">
+          @@include("../../bem-blocks/quiz-slides/slide-1/_slide1.html")
+        </div>
+      
+      </div>
       <article class="quiz__content">
         <h3 class="quiz__content-title">По закінченню теста <br>
           ви отримаєте</h3>

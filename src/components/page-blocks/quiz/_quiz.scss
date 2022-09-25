@@ -136,4 +136,31 @@
   &__employer-img {
     object-position: right bottom;
   }
+  &__slider-progress {
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    background-color: var(--color__grey-4);
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__progress-descr {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__slider-progress-body {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    border-radius: 1.25rem;
+    height: 100%;
+    max-width: 100%;
+    width: calc((100% / 7) * 1);
+    background-color: var(--color__orange-2);
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+    background-position: center center;
+  }
 }

@@ -1,0 +1,100 @@
+.slide {
+
+  &__title {}
+
+  &__choice-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 2rem;
+    grid-column-gap: 1.5rem;
+  }
+
+  &__check {
+    display: block;
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__check-input {
+    appearance: none;
+    opacity: 0;
+    display: block;
+    height: 0;
+    width: 0;
+  }
+
+  &__check-body {
+    display: block;
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    border: 0.25rem solid var(--color__white);
+    background-color: var(--color__white);
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: all 0.25s;
+    z-index: 1;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 0.75rem;
+      width: 0.75rem;
+      @include contain;
+    }
+  }
+
+  &__check-pic {
+    height: 14rem;
+    width: 100%;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    border: 1px solid transparent;
+    transition: all 0.25s;
+  }
+
+  &__check-img {
+    object-fit: cover;
+    transition: all ease-in-out 0.25s;
+  }
+
+  &__check:hover &__check-img {
+    transform: scale(1.1);
+  }
+
+  &__check-descr {
+    display: block;
+    font-size: 1.25rem;
+    text-align: center;
+    margin-top: 1.75rem;
+    transition: all ease-in-out 0.25s;
+  }
+
+  &__check-input:checked~&__check-body {
+    background-color: var(--color__orange-2);
+  }
+
+  &__check-input:checked~&__check-pic {
+    border-color: var(--color__orange-5);
+  }
+
+  &__check-input:checked~&__check-descr {
+    font-weight: 700;
+  }
+
+  &__bottom {
+    margin-top: 2rem;
+  }
+
+  &__bottom-text {
+    max-width: 22.25rem;
+    padding-left: 3.25rem;
+  }
+
+  &__button-next {}
+}
