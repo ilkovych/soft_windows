@@ -30,11 +30,13 @@
 
     .swiper {
       width: 46.5rem;
+      padding-top: 1rem;
     }
 
     .swiper-wrapper {
       min-width: 1px;
       width: 100%;
+      margin-top: 2.5rem;
     }
 
     .swiper-slide {
@@ -48,6 +50,42 @@
         height: 100%;
         width: 100%;
       }
+    }
+  }
+
+  .swiper-button-prev {
+    margin-left: auto;
+  }
+
+  .swiper-button-next {
+    margin-left: 1.5rem;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: block;
+    height: 1.5rem;
+    width: 1.5rem;
+    color: var(--color__orange-2);
+    cursor: pointer;
+    @include btn_anim(1.2, 0.9);
+  }
+
+  .swiper-button-next-icon,
+  .swiper-button-prev-icon {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  .swiper-button-disabled {
+
+    &.swiper-button-prev,
+    &.swiper-button-next {
+      color: var(--color__dark-2);
+      opacity: 0.25;
+      transform: none;
     }
   }
 
