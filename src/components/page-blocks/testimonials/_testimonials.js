@@ -10,7 +10,5 @@ function testimonialSliders() {
       }
   });
   const googleSlider = new Swiper(".testimonials__google-wrapper .swiper", {});
-
-
 }
 testimonialSliders();
