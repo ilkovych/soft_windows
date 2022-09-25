@@ -9,6 +9,9 @@
   background-image: var(--grad__orange);
   padding: 1rem;
   color: var(--color__white);
+  z-index: 20;
+  opacity: 0;
+  pointer-events: none;
 
   &__icon {
     display: block;

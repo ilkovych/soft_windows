@@ -1,0 +1,77 @@
+<!-- SECTION: price -->
+<section class="price">
+  <div class="container --fm flex --dir-col --just-space">
+    <div class="price__top-wrapper">
+      <h2 class="price__title"><strong class="price__title-accent">Завантажте прайс та каталог</strong> на виготовлення м'яких вікон заповнивши форму</h2>
+      <p class="price__title-text"> <strong class="price__title-accent">Лише один крок,</strong> щоб дізнатись ціну </p>
+    </div>
+    <form class="price__form">
+      <div class="price__form-wrapper">
+        <div class="price__form-inner flex --just-space --align-center">
+          <p class="price__form-title">Заповніть форму</p>
+          <p class="price__form-text">Куди вам зручно відправити файли?</p>
+          <div class="price__radio-group flex --align-str">
+
+            <label class="price__radio-item">
+              <input type="radio"
+                     class="price__radio-input"
+                     required
+                     name="messenger"
+                     id="whatsapp">
+              <span class="price__radio-description">
+                <span class="price__radio-icon --whatsapp">
+                  @@include("../../../svg/include/whatsapp.svg",{"class":"price__radio-pic"})
+                </span>
+                <span class="price__radio-text">What`s app</span>
+              </span>
+            </label>
+
+            <label class="price__radio-item">
+              <input type="radio"
+                     class="price__radio-input"
+                     required
+                     name="messenger"
+                     id="viber">
+              <span class="price__radio-description">
+                <span class="price__radio-icon --viber">
+                  @@include("../../../svg/include/viber.svg",{"class":"price__radio-pic"})
+                </span>
+                <span class="price__radio-text">Viber</span>
+              </span>
+            </label>
+            <label class="price__radio-item">
+              <input type="radio"
+                     class="price__radio-input"
+                     required
+                     name="messenger"
+                     id="telegram">
+              <span class="price__radio-description">
+                <span class="price__radio-icon --telegram">
+                  @@include("../../../svg/include/tg.svg",{"class":"price__radio-pic"})
+                </span>
+                <span class="price__radio-text">Telegram</span>
+              </span>
+            </label>
+          </div>
+          <input type="phone"
+                 class="price__input input"
+                 placeholder="Номер телефону"
+                 inputmode="tel"
+                 required>
+          <button class="price__button button"
+                  type="submit">Завантажити каталог</button>
+        </div>
+        <label class="price__checkbox-wrapper check flex --just-center">
+          <input type="checkbox"
+                 name=""
+                 id=""
+                 required
+                 class="check__input">
+          <span class="check__body"></span>
+          <span class="check__text">Натискаючи кнопку ви погоджуєтесь з умовами <b>Політики конфіденційності</b></span>
+        </label>
+      </div>
+    </form>
+  </div>
+</section>
+<!-- !SECTION: price -->

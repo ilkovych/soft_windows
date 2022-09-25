@@ -1,4 +1,4 @@
-const plugins = ["node_modules/parallax-js/dist/parallax.js"];
+const plugins = ["node_modules/parallax-js/dist/parallax.js","node_modules/swiper/swiper-bundle.js"];
 const {
 	src,
 	dest

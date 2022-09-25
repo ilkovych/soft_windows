@@ -1,0 +1,76 @@
+<address class="contacts">
+  <div class="container --fm">
+    <div class="contacts__inner flex --just-space --align-str">
+      <div class="contacts__col">
+        <p class="contacts__col-title">Ми на мапі</p>
+        <p class="contacts__col-subtitle">Адреса офісу:</p>
+        <p class="contacts__col-address">м. Дніпро вул. Козакова 26 офіс 7 (перед приїздом телефонуйте)</p>
+        <strong class="contacts__cities-subtitle">Маємо представництво в таких містах:</strong>
+        <ul class="contacts__cities-list">
+          <li class="contacts__list-item">м. Харків</li>
+          <li class="contacts__list-item">м. Київ</li>
+          <li class="contacts__list-item">м. Запоріжжя</li>
+          <li class="contacts__list-item">м. Одеса</li>
+          <li class="contacts__list-item">м. Житомир</li>
+          <li class="contacts__list-item">м. Львів</li>
+        </ul>
+        <iframe class="contacts__map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3743.8025009149483!2d35.12206200181424!3d48.432193345229955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbc73a2456afff%3A0xb56d9dca6bf6f4e1!2sPVH-MASTER!5e0!3m2!1suk!2suk!4v1664133401065!5m2!1suk!2suk"
+                height="200"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="contacts__col">
+        <p class="contacts__col-title">Наші контакти</p>
+        <div class="contacts__group">
+          <p class="contacts__suptext">ПН - СБ 9:00-18:00 / ВС- Вихідний</p>
+          <a href="tel:+380962886969"
+             class="contacts__phone">+38(096)-288-69-69</a>
+          <button class="contacts__callback">Зателефонувати мені за 30 сек</button>
+        </div>
+        <div class="contacts__group">
+          <p class="contacts__group-title">Напишіть нам в месенджер</p>
+          <p class="contacts__suptext">Відповідаємо миттєво</p>
+          @@include("../../bem-blocks/social/_social.html",{"class":"contacts__social"})
+        </div>
+        <div class="contacts__group">
+          <p class="contacts__group-title">Електронна пошта </p>
+          <a href="mailto:pvhmaster@gmail.com"
+             class="contacts__email">pvhmaster@gmail.com</a>
+        </div>
+      </div>
+      <div class="contacts__col flex --dir-col --just-space">
+        <p class="contacts__col-title">До зустрічі</p>
+        <figure class="contacts__illustration">
+          <picture class="contacts__pic">
+            <source srcset="img/contacts/contacts-1.webp"
+                    type="image/webp">
+            <img src="img/contacts/contacts-1.jpg"
+                 alt=""
+                 class="contacts__img">
+          </picture>
+          <figcaption class="contacts__illustration-text">В офісі</figcaption>
+        </figure>
+        <figure class="contacts__illustration">
+          <picture class="contacts__pic">
+            <source srcset="img/contacts/contacts-2.webp"
+                    type="image/webp">
+            <img src="img/contacts/contacts-2.jpg"
+                 alt=""
+                 class="contacts__img">
+          </picture>
+          <figcaption class="contacts__illustration-text">На замірі</figcaption>
+        </figure>
+      </div>
+      <div class="contacts__col --favorites --svg__favorites-before">
+        <p class="contacts__favorites-title">Додати сайт у закалдки</p>
+        <p class="contacts__favorites-text-top">Звернувшись до нас ви отримаєте кращу ціну на виготовлення м’яких вікон</p>
+        <button class="contacts__favorites-button button">Зберегти сайт</button>
+        <p class="contacts__favorites-text-bottom">Або натисніть на поєднання клавіш</p>
+        <p class="contacts__favorites-text-keys">CTR + D</p>
+      </div>
+    </div>
+  </div>
+</address>

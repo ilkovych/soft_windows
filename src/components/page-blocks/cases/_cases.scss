@@ -1,0 +1,94 @@
+.cases {
+  margin-top: 4rem;
+
+  &__title {
+    max-width: 77rem;
+    margin: 0 auto;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 20rem;
+      width: 10rem;
+      top: 0;
+      left: -10rem;
+      background-image: -webkit-image-set(url(../../../img/cases/leaf.png) 1x);
+      background-image: url(../../../img/cases/leaf.webp);
+      @include contain;
+      opacity: 0.5;
+    }
+  }
+
+  &__count {
+    font-size: 16rem;
+    font-weight: 900;
+    min-width: 2em;
+    background-image: -webkit-image-set(url(../../../img/cases/cases-counter-bg.jpg) 1x);
+    background-image: url(../../../img/cases/cases-counter-bg.webp);
+    background-clip: text;
+    color: transparent;
+    text-align: right;
+    @include cover;
+  }
+
+  &__title-text {
+    font-size: 3.75rem;
+    margin-left: 1em;
+  }
+
+  &__title-accent {}
+
+  &__filter {
+    margin-top: 4rem;
+  }
+
+  &__filter-btn {
+    min-width: 15.5rem;
+
+    &+& {
+      margin-left: 1.25rem;
+    }
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+    margin-top: 3.75rem;
+  }
+
+  &__slide {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    transition: all 0.25s;
+    display: none;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &.--is-active {
+      height: 17.75rem;
+      width: 25.5rem;
+      display: block;
+    }
+  }
+
+  &__img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__button-wrapper {
+    margin-top: 3.25rem;
+  }
+
+  &__more-btn.button {
+    max-width: none;
+  }
+}

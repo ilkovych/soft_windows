@@ -1,0 +1,53 @@
+.check {
+  position: relative;
+  cursor: pointer;
+
+  &__input {
+    opacity: 0;
+    appearance: none;
+    height: 0;
+    width: 0;
+    display: block;
+  }
+
+  &__body {
+    height: 1.25em;
+    width: 1.25em;
+    border-radius: 0.25em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color__white);
+    border: 1px solid var(--color__grey-7);
+    position: relative;
+    transition: all 0.24s;
+
+    &::before {
+      content: '';
+      height: 0.5em;
+      width: 0.5em;
+      background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' class='@class' viewBox='0 0 101.03 77.43'%3E%3Cpath d='M99.2 10.69l-8.86-8.87a6.31 6.31 0 00-8.87 0L38.71 44.65 19.55 25.42a6 6 0 00-4.43-1.83 6 6 0 00-4.43 1.83l-8.87 8.86a6.31 6.31 0 000 8.87l23.6 23.59 8.86 8.87a6.31 6.31 0 008.87 0L52 66.74l47.2-47.19a6 6 0 001.8-4.43 6 6 0 00-1.83-4.43z' fill='%23ffffff'/%3E%3C/svg%3E");
+      @include contain;
+      opacity: 0;
+      transition: all 0.25s;
+    }
+  }
+
+  &:hover &__input:not(:checked)~&__body {
+    background-color: var(--color__orange-4);
+  }
+
+  &__input:checked~&__body {
+    background-color: var(--color__orange-4);
+    border-color: var(--color__orange-4);
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &__text {
+    display: inline-block;
+    margin-left: 0.75em;
+  }
+}

@@ -1,0 +1,43 @@
+<!-- SECTION: steps -->
+<section class="steps">
+  <div class="container --fm">
+    <h2 class="steps__title"><strong class="steps__title-accent">Лише 5 етапів</strong> як будуть виготовлятись Ваші вікна</h2>
+    <div class="steps__inner">
+      <div class="steps__buttons-group flex --align-stretch --just-space">
+        <button class="steps__button button --grouped --is-active"
+                data-step="1">Консультація</button>
+        <button class="steps__button button --grouped"
+                data-step="2">Безкоштовний замір</button>
+        <button class="steps__button button --grouped"
+                data-step="3">Підписання договору</button>
+        <button class="steps__button button --grouped"
+                data-step="4">Виготовлення та безкоштовна доставка</button>
+        <button class="steps__button button --grouped"
+                data-step="5">Монтаж</button>
+      </div>
+      <div class="steps__wrapper">
+        @@include("../../bem-blocks/steps-items/_step1.html",{"number":"1","class":"--is-active"})
+        @@include("../../bem-blocks/steps-items/_step1.html",{"number":"2","class":""})
+        @@include("../../bem-blocks/steps-items/_step1.html",{"number":"3","class":""})
+        @@include("../../bem-blocks/steps-items/_step1.html",{"number":"4","class":""})
+        @@include("../../bem-blocks/steps-items/_step1.html",{"number":"5","class":""})
+      </div>
+      <address class="steps__contacts flex --align-str">
+        <div class="steps__contacts-block --border flex --dir-col --just-space">
+          <p class="steps__contacts-title">Або зателефонуйте нам прямо зараз</p>
+          <span class="steps__dotted-text">Ми працюємо</span>
+          <a href="tel:+380962886969"
+             class="steps__phone-link">+38(096)288-69-69</a>
+        </div>
+        <div class="steps__contacts-block --border flex --dir-col --just-space">
+          <p class="steps__contacts-title">А також пишіть<br> нам у мессенджери</p>
+          @@include("../../bem-blocks/social/_social.html",{"class":"steps__social"})
+        </div>
+        <div class="steps__contacts-block flex --align-center --just-end">
+          <button class="steps__bottom-button button">замовити консультацію нашого спеціаліста</button>
+        </div>
+      </address>
+    </div>
+  </div>
+</section>
+<!-- !SECTION: steps -->

@@ -1,0 +1,138 @@
+.price {
+  height: 60vw;
+  // min-height: 87.5rem;
+  margin-top: 5rem;
+  padding-top: 5rem;
+  background-image: -webkit-image-set(url(../img/price/price-book.webp) 1x);
+  background-image: url(../img/price/price-book.webp);
+  @include bg("cover", "center top");
+  padding-bottom: 7rem;
+
+  &__top-wrapper {}
+
+  &__title {
+    font-size: 3.75rem;
+    max-width: 55rem;
+    font-weight: 400;
+  }
+
+  &__title-accent {
+    font-weight: 700;
+  }
+
+  &__title-text {
+    margin-top: 2rem;
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  &__form {
+    display: block;
+    box-shadow: 0 0 250px rgba(40, 39, 40, 0.15);
+    background-color: var(--color__white);
+    padding: 0.75rem;
+    border-radius: 2.5rem;
+  }
+
+  &__form-wrapper {
+    border-radius: 2rem;
+    border: 1px solid var(--color__grey-9);
+    padding: 2.5rem 3rem;
+  }
+
+  &__form-inner {}
+
+  &__form-title {
+    font-size: 3rem;
+    font-weight: 700;
+    padding-right: 2rem;
+    border-right: 2px dotted rgba(83, 105, 144, 0.5);
+    flex: 0 0 17rem;
+  }
+
+  &__form-text {
+    padding-left: 2rem;
+    max-width: 9.5rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  &__radio-group {
+    margin-left: 1rem;
+  }
+
+  &__radio-item {
+    flex: 0 0 6.5rem;
+    width: 6.5rem;
+    cursor: pointer;
+  }
+
+  &__radio-input {
+    appearance: none;
+    display: block;
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+
+  &__radio-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem 0.5rem;
+    width: 100%;
+    text-align: center;
+    border-radius: 1.25rem;
+    transition: all 0.25s;
+    font-size: 0.75rem;
+  }
+
+  &__radio-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.25rem;
+    width: 3.25rem;
+    border-radius: 50%;
+    color: var(--color__white);
+  }
+
+  &__radio-pic {
+    height: 1.25rem;
+    width: 1.25rem;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  &__radio-text {
+    margin-top: 0.5rem;
+    white-space: nowrap;
+  }
+
+  &__radio-input:checked~&__radio-description {
+    font-weight: 700;
+  }
+
+  &__radio-input:checked~&__radio-description,
+  &__radio-item:hover &__radio-description {
+    box-shadow: 0 7px 27px rgba(40, 40, 40, 0.1);
+  }
+
+  &__radio-group:hover &__radio-input:checked~&__radio-description:not(:hover) {
+    box-shadow: none;
+  }
+
+  &__input {
+    margin-left: 2rem;
+    display: block;
+  }
+
+  &__button {
+    margin-left: 2rem;
+  }
+
+  &__checkbox-wrapper {
+    margin-top: 2rem;
+  }
+}
