@@ -1,4 +1,4 @@
-const plugins = ["node_modules/reseter.css/css/reseter.css"];
+const plugins = ["node_modules/reseter.css/css/reseter.css","node_modules/swiper/swiper.min.css"];
 
 const {
 	src,

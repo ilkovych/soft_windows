@@ -1,0 +1,86 @@
+.steps {
+  margin-top: -8rem;
+  position: relative;
+  z-index: 1;
+
+  &__title {
+    text-align: center;
+    font-size: 3.75rem;
+    font-weight: 400;
+  }
+
+  &__title-accent {}
+
+  &__inner {
+    margin-top: 4rem;
+  }
+
+  &__buttons-group {}
+
+  &__button {}
+
+  &__wrapper {
+    margin-top: 4rem;
+  }
+
+  &__contacts {
+    font-style: normal;
+    margin-top: 4rem;
+  }
+
+  &__contacts-block {
+    flex: 1 1 40%;
+
+    &.--border {
+      flex: 0 0 28%;
+      border-right: 2px dotted rgba(83, 105, 144, 0.5);
+
+      &:nth-of-type(2) {
+        flex: 0 0 32%;
+        padding: 0 6rem;
+      }
+    }
+  }
+
+
+  &__contacts-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    max-width: 18rem;
+  }
+
+  &__dotted-text {
+    color: var(--color__green-1);
+    font-size: 0.75rem;
+    margin-top: 1.75rem;
+    padding-left: 1em;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 0.5em;
+      width: 0.5em;
+      top: 0.35em;
+      left: 0;
+      border-radius: 50%;
+      background-color: currentColor;
+    }
+  }
+
+  &__phone-link {
+    color: var(--color__dark-1);
+    font-weight: 700;
+    font-size: 1.75rem;
+    display: block;
+    margin-top: 0.75rem;
+
+    &:hover {
+      color: var(--color__orange-1);
+    }
+  }
+
+  &__social {}
+
+  &__bottom-button {}
+}

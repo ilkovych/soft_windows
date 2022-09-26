@@ -1,6 +1,7 @@
 .button {
   @include no-btn("grid");
-  padding: 2em 3.5em;
+  padding: 0.5em 3.5em;
+  min-height: 6rem;
   font-size: 1rem;
   border-radius: 4rem;
   color: var(--color__white);
@@ -18,19 +19,37 @@
   justify-items: center;
   grid-auto-flow: column;
   grid-gap: 1em;
-
-  &:hover {
-    box-shadow: none;
-  }
-
   &.--secondary {
     background-image: none;
     background-color: var(--color__white);
-    color: var(--color__dark-2);
+    color: var(--color__dark-1);
     text-shadow: none;
     box-shadow: 0 0.25em 0 #c8c8c8;
   }
+  &.--grouped {
+    box-shadow: none;
+    font-weight: 600;
+    background-image: none;
+    background-color: var(--color__grey-1);
+    color: var(--color__dark-1);
+    font-size: 1rem;
+    text-transform: none;
+    max-width: 19rem;
 
+    &.--is-active {
+      color: var(--color__white);
+      background-image: var(--grad__orange);
+      transform: none !important;
+    }
+  }
+
+  &:hover {
+    @include btn-anim;
+  }
+
+  &:active {
+    box-shadow: none;
+  }
   &.--p-small {
     padding: 1rem;
   }
